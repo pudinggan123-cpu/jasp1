@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JASP | Jaringan Akses Sarana Pratama</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Logo JASP">
+      <span>JASP<small>JARINGAN AKSES SARANA PRATAMA</small></span>
+    </a>
+    <nav>
+      <a href="#layanan">Layanan</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#voucher">Voucher Wi-Fi</a>
+      <a href="#kontak">Kontak</a>
+      <a class="button button-small" id="adminNavLink" href="admin.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="beranda">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">JARINGAN • SERVER • KONEKTIVITAS</span>
+        <h1>Infrastruktur digital yang <span>selalu terhubung.</span></h1>
+        <p>JASP menyediakan layanan Web Server, Mail Server, dan MikroTik Hotspot untuk kebutuhan jaringan, layanan digital, serta akses internet yang terkelola.</p>
+        <div class="hero-actions">
+          <a class="button" href="#layanan">Lihat Layanan</a>
+          <a class="button button-outline" href="#voucher">Lihat Voucher</a>
+        </div>
+        <div class="stats">
+          <div><b>Web Server</b><small>Layanan situs web</small></div>
+          <div><b>Mail Server</b><small>Surat elektronik</small></div>
+          <div><b>Hotspot</b><small>Akses Wi-Fi</small></div>
+        </div>
+      </div>
+      <div class="hero-logo"><img src="assets/logo.png" alt="Logo Jaringan Akses Sarana Pratama"></div>
+    </div>
+  </section>
+
+  <section id="layanan">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Layanan JASP</h2>
+        <p>Solusi jaringan dan server untuk praktik, sekolah, usaha, serta kebutuhan konektivitas.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card"><div class="service-icon">⌘</div><h3>Web Server</h3><p>Penyediaan situs web, halaman informasi, dan pengaturan layanan web pada server.</p></article>
+        <article class="card"><div class="service-icon">✉</div><h3>Mail Server</h3><p>Layanan surat elektronik dengan domain sendiri untuk komunikasi organisasi.</p></article>
+        <article class="card"><div class="service-icon">◉</div><h3>MikroTik Hotspot</h3><p>Portal masuk Wi-Fi, pengaturan akses pengguna, dan sistem voucher internet.</p></article>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="tentang" class="about-section">
+    <div class="container about-grid">
+      <div class="about-mark">
+        <img src="assets/logo.png" alt="Logo JASP">
+        <span class="eyebrow">TENTANG PERUSAHAAN</span>
+        <h2>Mengenal JASP lebih dekat</h2>
+      </div>
+      <div class="about-copy">
+        <h3>Solusi jaringan dan layanan server dalam satu tempat.</h3>
+        <p><strong>JASP (Jaringan Akses Sarana Pratama)</strong> adalah perusahaan bidang teknologi informasi yang berfokus pada layanan jaringan komputer dan server. Kami membantu kebutuhan perancangan, pemasangan, konfigurasi, serta pengelolaan layanan digital untuk sekolah, usaha, dan lingkungan kerja.</p>
+        <p>Produk dan layanan JASP meliputi <strong>Web Server</strong> untuk menjalankan situs web, <strong>Mail Server</strong> untuk layanan surat elektronik, serta <strong>MikroTik Hotspot</strong> untuk mengatur akses Wi-Fi dan voucher internet.</p>
+        <div class="about-products">
+          <div><b>01</b><span><strong>Perangkat dan konfigurasi jaringan</strong><small>Pengaturan jaringan lokal dan akses internet.</small></span></div>
+          <div><b>02</b><span><strong>Layanan server</strong><small>Web server dan mail server untuk kebutuhan organisasi.</small></span></div>
+          <div><b>03</b><span><strong>Hotspot dan voucher Wi-Fi</strong><small>Pengelolaan pengguna, paket akses, dan portal login.</small></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="voucher-section" id="voucher">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Paket Voucher Wi-Fi</h2>
+        <p>Pilih paket voucher internet yang sesuai dengan kebutuhanmu.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card voucher-card">
+          <span class="pill">VOUCHER GRATIS</span><h3>Uji Coba</h3><div class="price">Gratis</div>
+          <p>Voucher akses untuk pelanggan.</p>
+          <ul><li>Kode: <code>JASP-TRY-01</code></li><li>Durasi contoh: 1 jam</li></ul>
+          <button class="button full-width" id="claimVoucher">Ambil Voucher</button>
+        </article>
+        <article class="card voucher-card">
+          <span class="pill">PAKET CONTOH</span><h3>Paket Harian</h3><div class="price">Rp5.000</div>
+          <p>Paket akses internet harian.</p><ul><li>Durasi contoh: 24 jam</li><li>Pembayaran belum aktif</li></ul>
+          <button class="button button-outline full-width" data-package="Paket Harian">Pilih Paket</button>
+        </article>
+        <article class="card voucher-card">
+          <span class="pill">PAKET CONTOH</span><h3>Paket Mingguan</h3><div class="price">Rp20.000</div>
+          <p>Paket akses internet mingguan.</p><ul><li>Durasi contoh: 7 hari</li><li>Pembayaran belum aktif</li></ul>
+          <button class="button button-outline full-width" data-package="Paket Mingguan">Pilih Paket</button>
+        </article>
+      </div>
+      <div id="voucherNotice" class="notice" hidden></div>
+      <p class="disclaimer">Informasi: voucher pada website ini belum terhubung ke MikroTik Hotspot.</p>
+    </div>
+  </section>
+
+  <section id="pelanggan">
+    <div class="container narrow">
+      <div class="section-heading">
+        <h2>Masuk Pelanggan</h2>
+        <p>Masukkan kode voucher untuk masuk ke layanan pelanggan.</p>
+      </div>
+      <form class="form-card" id="clientForm">
+        <div id="clientLoginFields">
+          <label>Kode voucher<input id="clientVoucher" placeholder="Masukkan kode voucher" required></label>
+          <button class="button full-width" type="submit">Masuk sebagai Pelanggan</button>
+        </div>
+        <div id="clientLoggedIn" hidden>
+          <div class="client-profile">
+            <div class="profile-picture-wrap">
+              <img id="clientAvatar" class="client-avatar" alt="Foto profil pelanggan" src="" hidden>
+              <div id="clientAvatarPlaceholder" class="client-avatar-placeholder" aria-label="Foto profil kosong">👤</div>
+            </div>
+            <div class="profile-details">
+              <strong id="clientDisplayName">Pelanggan JASP</strong>
+              <span class="profile-subtitle">Akun pelanggan</span>
+              <label class="profile-edit-label" for="clientAvatarInput">Ubah foto profil</label>
+              <input id="clientAvatarInput" class="profile-file-input" type="file" accept="image/*">
+              <label class="profile-name-label" for="clientNameInput">Nama profil</label>
+              <input id="clientNameInput" type="text" maxlength="40" placeholder="Tulis nama kamu">
+              <button class="button button-outline" id="saveClientProfile" type="button">Simpan Profil</button>
+            </div>
+          </div>
+          <p class="client-status"><strong>Berhasil masuk!</strong><br>Voucher aktif: <code id="activeVoucherCode">JASP-TRY-01</code></p>
+          <button class="button button-outline full-width" id="clientLogout" type="button">Keluar dari Akun Pelanggan</button>
+        </div>
+        <div id="clientMessage" class="form-message" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Kontak dan Lokasi Kantor</h2>
+        <p>Hubungi JASP untuk konsultasi layanan server dan jaringan.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Informasi Perusahaan</h3>
+          <p><b>Alamat:</b><br>Perum Cikupa Asri Blok A8 No.19, Pasir Gadung, Cikupa, Tangerang, Banten.</p>
+          <p><b>Telepon:</b><br>0895-3214-74846</p>
+          <p><b>Instagram:</b><br>@wisesacipta_teknologi</p>
+          <div class="hero-actions">
+            <a class="button" href="https://wa.me/62895321474846" target="_blank" rel="noopener">Hubungi WhatsApp</a>
+            <a class="button button-outline" href="https://www.google.com/maps/search/?api=1&query=Perum+Cikupa+Asri+Blok+A8+No.19+Pasir+Gadung+Cikupa+Tangerang" target="_blank" rel="noopener">Lihat Peta</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Mengapa Memilih JASP?</h3>
+          <p>• Pengaturan jaringan sesuai kebutuhan.</p>
+          <p>• Pengelolaan akses dan voucher hotspot.</p>
+          <p>• Dukungan penerapan web server dan mail server.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-content"><span>JASP — Jaringan Akses Sarana Pratama</span><a href="admin.html">Halaman Pengelola</a><span>© <span id="year"></span> JASP</span></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

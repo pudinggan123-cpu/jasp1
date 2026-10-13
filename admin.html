@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | JASP</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+<main class="admin-shell admin-shell-modern">
+  <aside class="admin-brand admin-brand-modern">
+    <div class="brand-orbit"><span class="orbit-dot"></span><img src="assets/logo.png" alt="Logo JASP"></div>
+    <span class="admin-kicker">JASP CONTROL CENTER</span><h1>Kelola jaringan.<br><em>Lebih mudah.</em></h1>
+    <p>Satu tempat untuk mengatur profil pengelola dan melihat ringkasan layanan Jaringan Akses Sarana Pratama.</p>
+    <div class="brand-status"><i></i> Sistem pengelola siap digunakan</div>
+    <a class="back-link" href="index.html">← Kembali ke website</a>
+    <div class="brand-decoration decoration-one"></div><div class="brand-decoration decoration-two"></div>
+  </aside>
+  <section class="admin-main admin-main-modern">
+    <div id="loginView" class="login-panel">
+      <span class="eyebrow">SELAMAT DATANG KEMBALI</span><h2>Login pengelola</h2>
+      <p class="muted">Masuk untuk membuka ruang kerja JASP.</p>
+      <form id="adminLoginForm" class="admin-form">
+        <label>Nama pengguna<div class="input-with-icon"><span>♙</span><input id="adminUsername" autocomplete="username" placeholder="Contoh: admin" required></div></label>
+        <label>Kata sandi<div class="input-with-icon"><span>⌑</span><input id="adminPassword" type="password" autocomplete="current-password" placeholder="Masukkan kata sandi" required><button class="password-toggle" id="togglePassword" type="button" aria-label="Tampilkan kata sandi">◉</button></div></label>
+        <button class="button full-width login-submit" type="submit"><span>Masuk ke dasbor</span><span>↗</span></button>
+        <div id="adminMessage" class="form-message" aria-live="polite"></div>
+      </form>
+      <div class="login-foot"><span class="secure-dot"></span> Akses khusus pengelola JASP</div>
+    </div>
+
+    <div id="dashboardView" class="dashboard-view" hidden>
+      <header class="dash-header"><div><span class="eyebrow">RUANG KERJA</span><h2>Dasbor utama<span class="wave"> ✦</span></h2><p class="muted">Pantau ringkasan dan atur identitas profil kamu.</p></div><button class="button button-outline logout-button" id="logoutButton" type="button">Keluar ↗</button></header>
+      <section class="welcome-banner"><div><span>SELAMAT DATANG</span><h3>Halo, <b id="welcomeName">Admin</b> 👋</h3><p>Semua hal penting untuk mengelola JASP ada di sini.</p></div><div class="welcome-art"><div class="art-ring ring-a"></div><div class="art-ring ring-b"></div><span>✦</span></div></section>
+      <div class="dashboard-cards">
+        <article class="dash-card"><div class="dash-card-icon blue-icon">⌘</div><span>Layanan aktif</span><strong>03</strong><small><i></i> Web · Mail · Hotspot</small></article>
+        <article class="dash-card"><div class="dash-card-icon purple-icon">◈</div><span>Voucher contoh</span><strong>01</strong><small>Katalog Wi-Fi JASP</small></article>
+        <article class="dash-card"><div class="dash-card-icon green-icon">✓</div><span>Status panel</span><strong class="status-active">Aktif</strong><small><i></i> Panel berjalan di browser ini</small></article>
+      </div>
+      <div class="dashboard-lower">
+        <section class="dash-section profile-editor" id="profileSettings"><div class="section-title"><div><span class="section-overline">PERSONALISASI</span><h3>Profil pengelola</h3><p>Atur foto dan nama yang tampil di website.</p></div><span class="edit-badge">✎ EDIT PROFIL</span></div>
+          <div class="profile-editor-content"><div class="avatar-upload-area"><div class="admin-avatar-wrap"><img id="adminAvatarPreview" alt="Foto profil pengelola" hidden><div id="adminAvatarPlaceholder" class="admin-avatar-placeholder">A</div><label class="avatar-camera" for="adminAvatarInput" title="Ganti foto">✎</label></div><span class="avatar-hint">PNG / JPG · maks. 2 MB</span><input id="adminAvatarInput" type="file" accept="image/*" hidden><button type="button" class="text-button" id="chooseAvatarButton">Ganti foto profil</button><button type="button" class="text-button danger-text" id="removeAvatarButton">Hapus foto</button></div>
+          <form id="profileForm" class="profile-form"><label>Nama yang ditampilkan<input id="profileNameInput" maxlength="40" placeholder="Nama pengelola" required></label><label>Nama pengguna<input id="profileUsernameInput" value="admin" readonly><small>Nama pengguna login tidak dapat diubah di panel ini.</small></label><button class="button save-profile" type="submit">Simpan perubahan <span>✓</span></button><div id="profileMessage" class="form-message" aria-live="polite"></div></form></div>
+        </section>
+        <section class="dash-section quick-panel"><div class="section-title"><div><span class="section-overline">NAVIGASI</span><h3>Akses cepat</h3><p>Buka bagian website tanpa mencari manual.</p></div></div><a class="quick-link" href="index.html"><span class="quick-icon">⌂</span><span><b>Website utama</b><small>Lihat tampilan publik</small></span><span class="quick-arrow">↗</span></a><a class="quick-link" href="index.html#voucher"><span class="quick-icon">◈</span><span><b>Katalog voucher</b><small>Lihat paket Wi-Fi</small></span><span class="quick-arrow">↗</span></a><a class="quick-link" href="index.html#kontak"><span class="quick-icon">✉</span><span><b>Informasi kontak</b><small>Detail kontak JASP</small></span><span class="quick-arrow">↗</span></a></section>
+      </div>
+      <p class="dashboard-note">Perubahan profil tersimpan di browser ini. Untuk keamanan dan pengelolaan multi-perangkat, autentikasi perlu dihubungkan ke server.</p>
+    </div>
+  </section>
+</main><script src="admin.js"></script>
+</body></html>
